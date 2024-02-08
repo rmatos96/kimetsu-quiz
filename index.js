@@ -45,7 +45,7 @@ const perguntas = [
         correta: 2
     },
     {
-        pergunta: "Qual é o nome do irmão mais novo de Inosuke?",
+        pergunta: "Qual é o nome do irmão mais novo do Hashira do vento, Sanemi?",
         respostas: [
             "Genya Shinazugawa",
             "Tengen Uzui",
