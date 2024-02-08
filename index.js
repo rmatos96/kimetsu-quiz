@@ -29,7 +29,7 @@ const perguntas = [
     {
         pergunta: "Quem é o Hashira das Serpentes?",
         respostas: [
-            "Shinobu Kocho",
+            "Obanai Iguro",
             "Kanao Tsuyuri",
             "Mitsuri Kanroji"
         ],
