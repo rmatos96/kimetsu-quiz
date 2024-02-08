@@ -27,7 +27,22 @@ main{
 header{
     margin-top:64px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #334155
+    border-bottom: 1px solid #334155;
+
+    
+}
+
+.img{
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height:10rem;
+    width:10rem;
 }
 
 header h1{
