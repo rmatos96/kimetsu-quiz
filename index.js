@@ -110,11 +110,15 @@ for(const item of perguntas){
     for(const resposta of item.respostas){
         const dt = quizItem.querySelector('dl dt').cloneNode(true)
         dt.querySelector('span').textContent = resposta
-        dt.querySelector('input').setAttribute('name', 'pergunta-' + perguntas.indexOf(item))
-        dt.querySelector('input').value = item.respostas.indexOf(resposta)
+        dt.querySelector('input').setAttribute('name', 'pergunta-' + perguntas.indexOf(item)) // DIFERENCIAR CADA INPUT COM SUA RESPOSTA
+        dt.querySelector('input').value = item.respostas.indexOf(resposta) // ADICIONAR A RESPOSTA A CADA INPUT
 
          dt.querySelector('input').onchange = (event) => {
             const estaCorreta = event.target.value == item.correta
+            if(!estaCorreta){
+                alert('Resposta Errada!')
+                window.location.reload()
+            }
             corretas.delete(item)
             if(estaCorreta) {
                 corretas.add(item)
